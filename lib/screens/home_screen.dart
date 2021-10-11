@@ -107,22 +107,19 @@ class _HomeScreenState extends State<HomeScreen> {
                           left: 20,
                           right: 20,
                         ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.start,
+                        child: Wrap(
+                          spacing: 30,
+                          runSpacing: 30,
                           children: [
                             Text(
-                              'Trending Trip Ideas',
+                              'TRENDING TRIP IDEAS',
                               style: TextStyle(
-                                  fontSize: 20, fontWeight: FontWeight.bold),
+                                  fontSize: 17,
+                                  fontWeight: FontWeight.bold,
+                                  fontFamily: 'overpass'),
                             ),
                             SizedBox(
                               height: 20,
-                            ),
-                            Container(
-                              height: 100,
-                              width: double.infinity,
-                              color: Colors.black,
                             ),
                             HomeItem(),
                             HomeItem()

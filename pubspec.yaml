@@ -48,6 +48,14 @@ flutter:
     - assets/images/logo.png
     - assets/images/one.png
 
+  fonts:
+    - family: overpass
+      fonts:
+        - asset: assets/fonts/Overpass-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Overpass-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Overpass-Regular.ttf
   # To add assets to your application, add an assets section, like this:
   # assets:
   #   - images/a_dot_burr.jpeg
