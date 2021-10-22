@@ -8,6 +8,8 @@ import 'package:flutter/widgets.dart';
 import 'package:hayuktrip_app/widget/home_item.dart';
 import 'package:hayuktrip_app/const/path.dart';
 import 'package:hayuktrip_app/widget/home_navbar.dart';
+import 'package:hayuktrip_app/widget/bottom_appbar.dart';
+import 'booking_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -121,8 +123,12 @@ class _HomeScreenState extends State<HomeScreen> {
                             SizedBox(
                               height: 20,
                             ),
-                            HomeItem(),
-                            HomeItem()
+                            HomeItem(
+                              routeing: BookingScreen(),
+                            ),
+                            HomeItem(
+                              routeing: BookingScreen(),
+                            )
                           ],
                         ),
                       ),
@@ -134,35 +140,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
-      bottomNavigationBar: BottomAppBar(
-        child: Row(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: [
-            IconButton(
-              onPressed: () {
-                Navigator.of(context).push(
-                  MaterialPageRoute(
-                    builder: (context) => HomeScreen(),
-                  ),
-                );
-              },
-              icon: Icon(Icons.cabin),
-              focusColor: Color.fromRGBO(53, 98, 215, 1),
-            ),
-            IconButton(
-              onPressed: null,
-              icon: Icon(Icons.luggage),
-              focusColor: Color.fromARGB(1, 53, 98, 215),
-            ),
-            IconButton(
-              onPressed: null,
-              icon: Icon(Icons.person),
-              focusColor: Color.fromARGB(1, 53, 98, 215),
-            )
-          ],
-        ),
-      ),
+      bottomNavigationBar: BottomNavbar(),
     );
   }
 }

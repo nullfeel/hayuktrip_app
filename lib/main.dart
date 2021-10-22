@@ -11,7 +11,9 @@ class HayukTrip extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Splash(),
-      theme: ThemeData(fontFamily: 'overpass'),
+      theme: ThemeData(
+          fontFamily: 'overpass',
+          visualDensity: VisualDensity.adaptivePlatformDensity),
     );
   }
 }
