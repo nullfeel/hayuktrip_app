@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hayuktrip_app/screens/home_screen.dart';
+import 'package:hayuktrip_app/screens/homepage.dart';
+import 'package:hayuktrip_app/screens/login.dart';
 
 class BottomNavbar extends StatelessWidget {
   const BottomNavbar({Key? key}) : super(key: key);
@@ -15,7 +16,7 @@ class BottomNavbar extends StatelessWidget {
             onPressed: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
-                  builder: (context) => HomeScreen(),
+                  builder: (context) => LoginPage(),
                 ),
               );
             },

@@ -32,7 +32,7 @@ class HomeItem extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                '7 DAYS / 2 PERSON',
+                '7 DAYS / UPTO 4 PERSON',
                 style: TextStyle(
                   fontWeight: FontWeight.normal,
                   fontSize: 13,
@@ -55,7 +55,7 @@ class HomeItem extends StatelessWidget {
             ],
           ),
           Text(
-            'How to get around Indonesia on the cheap budget in 2021',
+            'Yogyakarta Epic Trip get the best trip ever in your life.',
             style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18),
           )
         ],

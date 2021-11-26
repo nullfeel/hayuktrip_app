@@ -1,0 +1,10 @@
+{
+    "products": [
+        {
+            "name": "Epic Yogyakarta",
+            "imageURL": "https://images.unsplash.com/photo-1559998560-deb30d24ea50?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=beau-swierstra-MCSZVYlgza8-unsplash.jpg",
+            "brand": "INDONESIA",
+            "price": 100
+        }
+    ]
+}
